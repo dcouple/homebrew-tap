@@ -1,3 +1,5 @@
+![Grain Tap — a pixel-art software packaging depot](docs/assets/grain-tap-banner.png)
+
 # Grain Homebrew tap
 
 Official Homebrew distribution for [Grain](https://rungrain.com), maintained by the Grain team.
