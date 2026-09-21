@@ -8,6 +8,13 @@ cask "grain" do
   desc "Desktop workspace for building with AI agents"
   homepage "https://rungrain.com/"
 
+  livecheck do
+    url "https://updates.rungrain.com/grain/darwin/arm64/RELEASES.json"
+    strategy :json do |json|
+      json["currentRelease"]
+    end
+  end
+
   auto_updates true
   depends_on arch: :arm64
   depends_on macos: ">= :monterey"
