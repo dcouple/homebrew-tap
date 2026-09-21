@@ -2,17 +2,17 @@
 
 # Grain Homebrew tap
 
-Official Homebrew distribution for [Grain](https://rungrain.com), maintained by the Grain team.
-
-## Release status
-
-The first Homebrew release is being prepared. This repository does not yet contain an installable cask.
-
-Once the signed release and cask are published, installation will be:
+Official Grain distribution maintained by the Grain team. Version 0.2.20 is available for Apple Silicon Macs running macOS 12 or later.
 
 ```sh
-brew install --cask dcouple/tap/grain
+brew install --cask greenfield-inc/tap/grain
 grain setup
 ```
 
-Grain includes its CLI and MCP server. Setup guides you through browser signup or sign-in, configures selected supported agents, verifies the configuration, and launches Grain.
+Grain includes its CLI and MCP server. Setup signs you in, configures selected agents, and opens Grain.
+
+Grain updates itself. To explicitly upgrade using Homebrew, run `brew upgrade --cask --greedy grain`.
+
+Uninstall with `brew uninstall --cask grain`. Your account, workspaces and agent configuration are retained.
+
+Release maintainers: regenerate Casks/grain.rb from the Grain source repository using scripts/generate-homebrew-cask.mjs.
