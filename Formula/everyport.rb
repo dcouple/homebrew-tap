@@ -1,7 +1,7 @@
 class Everyport < Formula
   desc "See every dev server on your machine, or any box you can reach"
   homepage "https://github.com/greenfield-inc/everyport"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   base = "https://github.com/greenfield-inc/everyport/releases/download/v#{version}"
@@ -9,22 +9,22 @@ class Everyport < Formula
   on_macos do
     on_arm do
       url "#{base}/everyport-aarch64-apple-darwin"
-      sha256 "a1c7e7b0ba59fe50fa4ffb8f9a34b3a217185682a39d5f82f72577c891ee6c01"
+      sha256 "032f7aea6667c04f021366d127f6e7f8e40e5142061b9fa86730d34a40a6d8af"
     end
     on_intel do
       url "#{base}/everyport-x86_64-apple-darwin"
-      sha256 "61ef274b080af19d1efe48c6c8af94b0d67b59c7b6d2b4d2f4be0f38fd9e0c5b"
+      sha256 "2dfba896849e662205aa2592f4e15c4ffd2c9b968484cf7b764f641187b002fe"
     end
   end
 
   on_linux do
     on_arm do
       url "#{base}/everyport-aarch64-unknown-linux-musl"
-      sha256 "aefacc9dc8eb81c04c783c498ea48e5da2a9f5019f38a940a86075563392aba0"
+      sha256 "4c77759fa42427263af7556112461b1f49278413adf9bedcc59defe2b6504866"
     end
     on_intel do
       url "#{base}/everyport-x86_64-unknown-linux-musl"
-      sha256 "f13c9d0a5e73b1fc01ebac14e03b2233ac50b3375761da03d6e6ef0147be832d"
+      sha256 "f741b9982e51dea9665cccad2ffa069f5b82ab60382ddc64cb8aa4a5cf3851ff"
     end
   end
 
