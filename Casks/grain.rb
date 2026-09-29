@@ -1,6 +1,6 @@
 cask "grain" do
-  version "0.2.21"
-  sha256 "e3793cab8fc27d4490650cf0ea4c66283a6420a55d237d469813f51f4e43a19f"
+  version "0.2.22"
+  sha256 "411e6fe69190e465d04a0ef72b09bb36a0c35e9cac4e953d6cbcb6f74e3313a1"
 
   url "https://updates.rungrain.com/grain/darwin/arm64/Grain-darwin-arm64-#{version}.zip"
   name "Grain"
