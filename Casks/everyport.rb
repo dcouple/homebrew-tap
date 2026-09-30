@@ -1,9 +1,9 @@
 cask "everyport" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.1.2"
-  sha256 arm:   "64a1ef74c5ddb1cd2b65e14f64890092fc57fd03c5a6e81c2bb3ecc3b8a9a429",
-         intel: "cfd902eeba0bb2c845bbb954d0088300dfd7c3a7146283da26d4f64b13cf0b2b"
+  version "0.1.3"
+  sha256 arm:   "556415e5a125e3342849c34d9eef0bdc089ab81790dfd79b10c2ddbb7c57ac0b",
+         intel: "ea34118bc38be493676eb80a1d28f1072cd24f0d0dff2c7bb7a4d5ddc646b893"
 
   url "https://github.com/greenfield-inc/everyport/releases/download/v#{version}/everyport-#{version}-#{arch}.dmg"
   name "Everyport"
