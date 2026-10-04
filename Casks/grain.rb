@@ -1,21 +1,23 @@
 cask "grain" do
-  version "0.2.22"
-  sha256 "411e6fe69190e465d04a0ef72b09bb36a0c35e9cac4e953d6cbcb6f74e3313a1"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://updates.rungrain.com/grain/darwin/arm64/Grain-darwin-arm64-#{version}.zip"
+  version "0.4.0"
+  sha256 arm:   "b4c1069a744d124f64f294297b30b3580eaca12ad9e7a924e26cc926a12d38ba",
+         intel: "a5fad4407694e30198e70fc6a229d55f50237d641a77a7f649259cc924b56eec"
+
+  url "https://updates.rungrain.com/grain/darwin/#{arch}/Grain-darwin-#{arch}-#{version}.zip"
   name "Grain"
   desc "Desktop workspace for building with AI agents"
   homepage "https://rungrain.com/"
 
   livecheck do
-    url "https://updates.rungrain.com/grain/darwin/arm64/RELEASES.json"
+    url "https://updates.rungrain.com/grain/darwin/#{arch}/RELEASES.json"
     strategy :json do |json|
       json["currentRelease"]
     end
   end
 
   auto_updates true
-  depends_on arch: :arm64
   depends_on macos: :monterey
 
   app "Grain.app"
